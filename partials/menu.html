@@ -1,0 +1,13 @@
+<md-toolbar>
+ 	<div class="md-toolbar-tools">
+	    <md-truncate class="changeCollor">Trabalho de Análise de Projeto e Algoritmos</md-truncate>
+
+	    <span flex></span>
+	    <label style="margin-right: 10px;">Atividade:</label>
+	    <md-select ng-model="selected">
+            <md-option ng-repeat="activity in activities" ng-value="activity.link" ng-selected="$first" ng-click="changeLink(activity.link)">
+              {{activity.name}}
+            </md-option>
+         </md-select>
+	</div>
+</md-toolbar>

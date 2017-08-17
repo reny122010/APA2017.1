@@ -1,0 +1,48 @@
+<html ng-app="apa">
+<head>
+	<title></title>
+	<!-- Require dependece CSS Angular Material -->
+	 <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+	 <link rel="stylesheet" type="text/css" href="css/style.css">
+
+	 <meta charset="UTF-8">
+</head>
+<body>
+
+<div ng-controller="globalController" ng-cloak>
+	<div ng-include="'/partials/menu.html'"></div>
+  	<md-content>
+  		<div ng-view></div>
+  	</md-content>
+</md-content>
+
+
+
+<!-- Require dependece jQuery -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+<!-- Angular Material requires Angular.js Libraries -->
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+  <!-- Angular Material Library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+<!-- Angular.js Libraries -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
+<script src="js/angular-chart.min.js"></script>
+
+<!-- Angular Main APP -->
+<script src="js/main.js"></script>
+
+<!-- Angular Controllers APP -->
+<script src="js/angular/controllers/globalController.js"></script>
+<script src="js/angular/controllers/comparacao1Controller.js"></script>
+
+</body>
+</html>

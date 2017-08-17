@@ -1,0 +1,55 @@
+<md-content >
+
+    <md-card style="height: 85%;">
+
+    <div layout="row">
+ 		<div flex="50">
+	    	<md-input-container style="margin-left: 20px;  margin-top: 30px;">
+	        	<label>Quantidade de elementos</label>
+	        	<input ng-model="maxValue">
+	    	</md-input-container>
+
+	    	<md-button ng-click="createArray()">Criar novo array</md-button>
+	    	<div layout="column">
+	    		<div flex>
+			    	<md-button ng-click="sortAll()">Ordenar os dois</md-button>
+			    	<md-button ng-click="startSelectionSort()">Ordenar SelectionSort</md-button>
+			    	<md-button ng-click="startInserionSort()">Ordenar InsertionSort</md-button>
+		    	</div>
+	    	</div>
+	    	<div layout="column">
+	    		<div flex>
+			    	<canvas id="bar" class="chart chart-bar"
+					  chart-data="data" chart-labels="labels"chart-series="series" chart-options="options"> 
+					</canvas>
+				</div>
+			</div>
+	  	</div>
+	  	<div flex="50">
+	  		<md-content style ="max-height: 40%; margin-top: 30px; margin-right: 20px;">
+		  		<md-list flex>
+			        <md-subheader class="md-no-sticky">Array Selection Sort</md-subheader>
+			        <md-list-item class="md-1-line" ng-repeat="item in arraySortSelection track by $index" ng-click="null">
+			          	<div class="md-list-item-text" layout="column">
+			            	<h3>{{item}}</h3>
+			          	</div>
+			        </md-list-item>
+			    </md-list>
+		    </md-content>
+
+		    <md-content style ="max-height: 40%; margin-top: 30px; margin-right: 20px;" >
+		  		<md-list flex>
+			        <md-subheader class="md-no-sticky">Array Insertion Sort</md-subheader>
+			        <md-list-item class="md-1-line" ng-repeat="item in arraySortInsertion track by $index" ng-click="null">
+			          	<div class="md-list-item-text" layout="column">
+			            	<h3>{{item}}</h3>
+			          	</div>
+			        </md-list-item>
+			    </md-list>
+		    </md-content>
+
+	  	</div>
+	</div>
+    	
+	</md-card>
+</md-content>
