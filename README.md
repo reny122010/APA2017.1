@@ -15,7 +15,7 @@ Esse repositório contem a implementação das atividades dos algoritmos de orde
 Faça clone do repositório dentro da pasta de acesso http do servidor que você instalou e abra o navegador em: http://localhost/APA2017.1/
 
 ### Demo
-Acesse: http://stchost.com.br/renealves/
+Acesse: https://stchost.com.br/renealves/
 
 ## Contribuintes
 
