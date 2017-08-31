@@ -15,6 +15,10 @@ app.controller('globalController', ['$scope','$location', function ($scope, $loc
 		{
 			name: 'Comparação 1',
 			link: 'comparacao1'
+		},
+		{
+			name: 'Comparação 2',
+			link: 'comparacao2'
 		}
 	];
 

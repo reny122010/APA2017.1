@@ -20,6 +20,11 @@ app.config(['$routeProvider', function ($routeProvider) {
       	title         : 'Trabalho APA Comparacao 1',
         controller    : 'comparacao1Controller'
     })
+    .when('/comparacao2', {
+        templateUrl   : 'partials/comparacao2.html',
+        title         : 'Trabalho APA Comparacao 2',
+        controller    : 'comparacao2Controller'
+    })
     .otherwise({
       redirectTo: '/'
     });
